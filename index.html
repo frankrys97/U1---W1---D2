@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Primi passi operativi per creare un modello di
+    pagina HTML per un post. Scopri come iniziare in modo facile."
+    />
+    <title>Sviluppo di una pagina web - Blog Epicode</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#">
+        <img src="assets/img/logo.svg" alt="Logo Epicode" />
+      </a>
+      <div class="vertical"></div>
+      <div class="topbar">
+        <div>
+          <a href="#">
+            <h4>Epicode - Il blog dei developers</h4>
+          </a>
+        </div>
+        <div>
+          <a href="#">Home</a>
+        </div>
+        <div>
+          <a href="#">Articoli</a>
+        </div>
+        <div>
+          <a href="#">Lavora con noi</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div>
+          <h2>Come creare un template per i post di Mario Rossi</h2>
+          <h4>pubblicato il 25-10-2020</h4>
+        </div>
+        <div>
+          <p>
+            La prima cosa da fare è suddividere in blocchi logici la pagina,
+            identificando le parti comuni da applicare a tutte le pagine
+          </p>
+          <p>Le varie aree saranno quindi suddivise in:</p>
+          <ul>
+            <li>Contenuti di intestazione del tag &lt;header&gt;</li>
+            <li>
+              Contenuti centrali variabili del tag &lt;main&gt; (corpo
+              principale)
+            </li>
+            <li>
+              Contenuti di fine pagina comuni, da inserire nel tag
+              &lt;footer&gt;
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Formattazione del codice</h3>
+        </div>
+        <div>
+          <p>
+            Il testo dell'articolo dovrà essere formattato per identificare
+            tutte le parti da selezionare con i CSS. Perciò i passi saranno:
+            Progettare il markup assegnando ad ogni specifico testo il tag
+            appropriato Scrivere l'HTML dai tag esterni a quelli interni e
+            dall'alto verso il basso
+          </p>
+        </div>
+        <div>
+          <h3>Applicare gli stili CSS</h3>
+          <p>
+            L'applicazione di stili CSS è cresciuta negli anni fino a
+            raggiungere la diffusione pressoché totale.
+          </p>
+          <table>
+            <caption>
+              Diffusione dei CSS
+            </caption>
+            <thead>
+              <tr>
+                <th>Anno</th>
+                <th>% di utilizzo</th>
+                <th>Supporto browser</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2000</td>
+                <td>20%</td>
+                <td>17%</td>
+              </tr>
+              <tr>
+                <td>2002</td>
+                <td>35%</td>
+                <td>22%</td>
+              </tr>
+              <tr>
+                <td>2004</td>
+                <td>45%</td>
+                <td>42%</td>
+              </tr>
+              <tr>
+                <td>2008</td>
+                <td>88%</td>
+                <td>51%</td>
+              </tr>
+              <tr>
+                <td>2012</td>
+                <td>100%</td>
+                <td>76%</td>
+              </tr>
+            </tbody>
+            <tfoot></tfoot>
+          </table>
+        </div>
+        <div>
+          <p>
+            Un test di validazione potrà essere fatto tramite il tool online
+            <a href="#">-LINK ESTERNO-</a> dedicato allo scopo. Una volta
+            ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere
+            stati dei veri developers come loro:
+          </p>
+        </div>
+        <div>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/IjzdMvuzxDY?si=OxGhv_PnVKjlciWq"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <div class="vertical-line"></div>
+      <aside>
+        <h3>Articoli correlati</h3>
+        <a href="#">
+          <div class="articles">
+            <img
+              src="https://epicode.com/wp-content/uploads/2022/08/html-e-css-1.jpg"
+              alt="Immagine codice"
+            />
+            <h4>Validare il codice HTML</h4>
+            <p>Categoria: develop</p>
+            <p>Data: 18-9-2020</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="articles">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/HTML.svg/1200px-HTML.svg.png"
+              alt="Immagine codice"
+            />
+            <h4>Correggere la sintassi</h4>
+            <p>Categoria: develop</p>
+            <p>Data: 16-9-2020</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="articles">
+            <img
+              src="https://fossbytes.com/wp-content/uploads/2016/08/bytes-kilobyte-megabyte-representation.jpg"
+              alt="Immagine codice"
+            />
+            <h4>Meno Kb nella pagina</h4>
+            <p>Categoria: ottimizzazione</p>
+            <p>Data: 30-9-2020</p>
+          </div>
+        </a>
+      </aside>
+    </main>
+    <footer>
+      <form onsubmit="alert('Registrazione effettuata')">
+        <h4 class="newsletter">
+          Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla
+          nostra newsletter:
+        </h4>
+        <label for="newsletter"></label>
+        <input type="email" id="newsletter" placeholder="La tua email" />
+        <button type="submit">Iscriviti!</button>
+      </form>
+
+      <small
+        >Blog Epicode ©2023 Testata online di Mario Rossi, registrata con prot.
+        n.213/2018 - via Luigi Einaudi 2 - Milano. P.IVA 00112233.
+        <a href="#">info@epicode.school</a>
+      </small>
+    </footer>
+  </body>
+</html>
